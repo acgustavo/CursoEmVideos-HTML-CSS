@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(175, 164, 144);
+            margin: 0px;
+        }
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        nav{
+            background-color: rgb(137, 147, 156);
+            padding: 3px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315); /*sombra*/
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bolder;
+            margin: 30px;
+        }
+        nav > a:hover{
+            text-decoration: underline;
+        }
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 6px 6px 6px 6px;
+            box-shadow: 2px 2px 4px 1px rgba(0, 0, 0, 0.315);
+        }
+        article{
+            background-color: rgba(211, 211, 211, 0.836);
+        }
+        article > aside{
+            text-align: right;
+            background-color: rgb(148, 147, 147);
+            padding: 4px;
+        }
+        aside > p{
+            margin: 0px;
+        }
+        footer{
+            background-color: black;    
+            color: white;   
+            text-align: center; 
+            padding: 4px;   
+            margin: 0px;    
+        }
+        footer > p{
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <!--header é o cabeçalho da pagina-->
+    <header>
+        <h1>Meu site</h1>
+        <!--nav é o menu-->
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <!--main conteudo principal-->
+    <main>
+        <!--temos o nosso conteúdo  ele pode ser separado por sessões -->
+        <section id="assuntos">
+            <p>Esportes Politica Tecnologia</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Notícia sobre o Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam laudantium possimus quasi culpa voluptatem eligendi itaque dignissimos quam sequi praesentium corrupti commodi nam, magni in ut ab velit porro minus.</p>
+                <!--aside é algo periférico que pertence ao artigo ex: nome do autor-->
+                <aside>
+                    <p>Artigo escrito por João</p>
+                </aside>
+            </article>
+            <article>
+                <h2>Outras noticias</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam soluta impedit animi praesentium qui, nam facilis omnis fuga maxime provident quia non esse ratione rerum architecto tempora dolorum, nisi voluptatem?</p>
+            </article>
+        </section>
+    </main>
+    <!--footer é o roda pe do da pagina-->
+    <footer>
+        <p>desenvolvido por Gustavo</p>
+    </footer>
+
+</body>
+</html>

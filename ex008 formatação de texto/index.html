@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>formatação de texto</title>
+    <style>
+        mark{
+            background-color: rgb(52, 118, 177);
+        }
+    </style>
+</head>
+<body>
+    <H1>Principais formatações </H1>
+    <h2>Tratando de Negrito / Destaque</h2>
+    <p>Termo em <B>Negrito</B> utilizando a tag b</p>
+    <p>Termo em <strong>destaque</strong> utilizando a tag strong </p>
+    <h2>tratando de itálico</h2>
+    <p>termo em <i>itálico</i> utilizando a tag i</p>
+    <p>Termo em <em>ênfase</em> utilizando a tag em </p>
+    <p>Podemos criar <mark style="background-color: brown;">texto marcado com style local</mark> tag mark</p>
+    <p>Podemos criar <mark>texto marcado</mark> tag mark com style global</p>
+    <h2>Texto texto pequeno</h2>
+    <p>criando texto <small>pequeno </small> com a tag small</p>
+    <p>para texto <del>textos excluídos (riscados)</del> temo a tag DEL </p>
+    <p>Para texto <ins>inserido (sublinhado)</ins> utilizamos a tag ins</p>
+    <p>Para texto <u>sublinhado</u> utilizamos a tag U</p>
+    <h2>texto sobrescrito</h2>
+    <p>Para inserir texto tipo expressões numéricas x<sup>2</sup>+30 Utilizamos o SUP</p>
+    <h2>Texto Subscrito</h2>
+    <p>Para inserir texto tipo formulas químicas H<sub>2</sub>O utilizamos o SUB</p>
+    <H1>formatações</H1>
+    <h2>código-fonte</h2>
+    <p>o comando <code>document.getElementyByid('teste')</code> é escrito em JavaScript.</p>
+    <pre>
+        <code>
+            println ("Olá Mundo");
+            if (2 < 0)
+                println ("2 é maior que 0");
+            else
+                println ("2 não é maior que 0");
+        </code>
+    </pre>
+    <h2>Citações</h2>
+    <h3>Citação simples</h3>
+    <p>como diria um pai de um amigo: <q>O computador é um burro muito rápido</q></p>
+    <h3>Citação Completa</h3>
+    <p>Segundo MDN contributors:</p>
+    <blockquote cite="https://developer.mozilla.org/pt-BR/docs/Web/HTML">
+        Representar dados tabulares em uma página web de maneira entendível e acessível pode ser um desafio. Este módulo cobre marcação tabular básica, junto com outras funcionalidades mais complexas como legendas e sumários.
+    </blockquote>
+    <h2>Abreviações</h2>
+    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style sheets">CSS</abbr>. </p>
+    <h2>Texto invertido</h2>
+    <p><bdo dir="ltr">Estou aprendendo HTML e CSS.</bdo></p>
+    <p><bdo dir="rtl">Estou aprendendo HTML e CSS.</bdo></p>
+
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo hover</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+         /* 
+            pseudo class, representa algum estado ou evento
+            ex: hover (se passar mouse em cima, executa a a pseudo class)
+        */
+        /* > da sentido de hierarquia ex ele vai executar em p filho de div apenas*/
+        div > p{
+            display: none;
+        }
+        div:hover > p {
+            display: block;
+            background-color: red;
+            color: white;
+        }
+        div:hover{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Exemplo de Hover</h1>
+    <p>Passe o mouse sobre o texto abaixo</p>
+    <div>
+        passe o mouse aqui
+        <p>Texto escondido...</p>
+    </div>
+    <p>fim do exemplo</p>
+</body>
+</html>

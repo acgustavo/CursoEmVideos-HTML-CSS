@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imagens dinâmica</title>
+</head>
+<body>
+    <h1>Mídias</h1>
+    <hr>
+    <h2>Imagens dinâmicas</h2>
+    <p>Para imagens pequena 300 x 300 px 80 x 80 px/in.</p>
+    <p>Para imagens Media 700 x 700 px 80 x 80 px/in.</p>
+    <p>Para imagens Grande 1000 x 1000 px 80 x 80 px/in.</p>
+    <picture>
+        <source media="(max-width: 720px)" srcset="imagens/foto-p.png">
+        <source media="(max-width: 1020px)" srcset="imagens/foto-m.png">
+        <img src="imagens/foto-g.png" alt="foto-g">
+    </picture>
+    <hr> <!-- -->
+
+
+    <h2>Audio</h2>
+    <h3>Carregando audio simples</h3>
+    <audio preload="metadata" src="midia/electrodoodle-Kevin-MacLeod.mp3" autoplay controls></audio>
+    <h3>Carregando audio com vários formatos</h3>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="midia/happy-mistake.mp3" type="audio/mpeg">
+        <source src="midia/happy-mistake.ogg" type="audio/ogg">
+        <source src="midia/happy-mistake.wav" type="audio/wav">
+        <p>infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/happy-mistake.mp3">Clique aqui</a> para baixar o arquivo MP3</p>
+    </audio>
+
+
+    
+</body>
+</html>

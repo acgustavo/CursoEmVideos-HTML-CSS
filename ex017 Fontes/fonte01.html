@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <style>
+        @import url();
+        body{
+            /*
+            Medidas absolutas
+            cm, mm, in, px, pt, pc
+
+            Medidas Relativas
+            em, ex, rem, vw, vh, %
+            recomendação de utilização em ou px
+            16px geralmente é = 1em
+
+            */
+            font-family: monospace;
+            font-size: 1em; /*tamanho da fonte */
+            font-weight: 900; /*espessura da fonte / lighter(slim) - normal - bold(negrito) - bolder(supernegrito) OU de 100 - 900*/
+            font-style: italic;/*estilo da fonte */
+            text-decoration: underline;/*sublinhado, risco  */
+
+            
+        }
+        /**/
+        h1{
+            font-style: italic;
+            font-weight: 130;
+            font-size: 3em;
+            font-family: sans-serif;
+            /* 
+            podemos condensar essas informações
+            shorthand font
+            font-style: - font-weight: - font-size: - font-family: 
+            */
+        }
+
+        h2{
+            font: italic 130 3em sans-serif;
+        }
+
+        p{
+         font-family: monospace;
+        }
+        /**/
+    </style>
+</head>
+<body>
+    <h1>trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolorum, sint similique perferendis omnis vitae deserunt eius facilis repellendus architecto veritatis incidunt quisquam ullam totam rem fugiat, quas impedit quam. Quam. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga animi optio veniam aut vitae cumque officia natus distinctio molestiae! Ad voluptatum voluptate iste corporis pariatur quod expedita nisi quis consequuntur? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut facere doloribus provident explicabo error eveniet est, in consectetur consequuntur odit numquam repellat nihil minus assumenda molestias quo corrupti, debitis deserunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi quas accusantium temporibus deserunt dolores porro voluptate quos, assumenda aspernatur, soluta hic alias consequuntur unde minus non aperiam recusandae, sapiente praesentium!</p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellat debitis ipsa nulla aliquam sit animi obcaecati minima, rem tempora reprehenderit quibusdam sequi placeat ad, suscipit, praesentium perferendis maxime temporibus consectetur?</p>
+    <h2>subtitulo teste</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde vero voluptatem adipisci fuga inventore nobis accusamus repudiandae ducimus, sit autem tempora quo expedita corrupti at neque sunt labore eius perferendis.</p>
+</body>
+</html>
